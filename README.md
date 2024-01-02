@@ -17,4 +17,4 @@ Step 1: Run below code:
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
-Step 2: Run file "RunScript.ps1"
+Step 2: Run file "RunScript.ps1" as administrator permission
