@@ -4,10 +4,12 @@ $softwareToInstall = @(
     "notepadplusplus.install",
     "intellijidea-community",
     "dbeaver",
-    "postgresql14",
     "sourcetree",
     "oracle17jdk",
-    "git"
+    "git",
+    # "office365business",
+    "7zip.install",
+    "obsidian"
 )
 forEach ($software in $softwareToInstall) {
     $installed = choco list $software | Out-String
