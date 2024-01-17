@@ -10,7 +10,8 @@ $softwareToInstall = @(
     # "office365business",
     "7zip.install",
     "obsidian",
-    "foxitreader"
+    "foxitreader",
+    "postman"
 )
 forEach ($software in $softwareToInstall) {
     $installed = choco list $software | Out-String
