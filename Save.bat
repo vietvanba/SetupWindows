@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -File C://Users/Viet/Desktop/SetupWindow/AutoSaveObsidian.ps1
