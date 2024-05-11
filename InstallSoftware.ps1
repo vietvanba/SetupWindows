@@ -12,13 +12,14 @@ $softwareToInstall = @(
     "obsidian",
     "foxitreader",
     "postman",
-    "messenger"
+    "messenger",
+    "docker-desktop"
 )
 forEach ($software in $softwareToInstall) {
     $installed = choco list $software | Out-String
     if ($installed -notmatch $software) {
         Write-Output "$software is not installed. Proceeding to install..."
-        echo "A" | choco install $software
+        echo "Y" | choco install $software
         
     }
     else {
